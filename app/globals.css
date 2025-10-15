@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-neutral-900 text-zinc-100
+    }
+
+    .button-style {
+        @apply cursor-pointer rounded-lg p-2 px-4 border border-zinc-700/30 text-sm bg-neutral-800/65 hover:bg-neutral-800/30 transition-all
+    }
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(26, 26, 26);
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(49, 49, 49);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #525252;
+    border-radius: 10rem;
+}
