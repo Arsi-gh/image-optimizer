@@ -22,7 +22,7 @@ export default function DropArea() {
         {/* <button className='button-style flex gap-3 items-center'>Choose file <TbCloudUpload className='text-xl'/></button> */}
         <input ref={inputRef} className='hidden' type="file"/>
     </div>
-    <p className='text-sm w-fit md:hidden max-md:mx-auto mt-36'>Currently not available</p>
+    <p className='text-sm w-fit md:hidden max-md:mx-auto mt-36'>Currently not available in selphone</p>
     {/* <p className='text-sm w-fit md:hidden max-md:mx-auto mt-36'>ur selphone cant take it</p> */}
     {/* <p className='text-sm w-fit md:hidden max-md:mx-auto mt-2'>go buy a laptop or something</p> */}
     </>
