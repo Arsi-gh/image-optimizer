@@ -1,9 +1,8 @@
 import LoaderProvider from "@/provider/loaderProvider";
 import "./globals.css";
 import Sidebar from "@/components/sidebar";
-import ClearBtn from "@/components/clearBtn";
 import ImgProvider from "@/provider/imgProvider";
-import PercentageProvider from "@/provider/percentageProvider";
+import SettingsContext from "@/provider/settingsProvider";
 
 export const metadata = {
   title: "Image optimizer",
@@ -13,15 +12,16 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
-      <body className="flex">
+      <body>
         <LoaderProvider>
-          <PercentageProvider>
+          <SettingsContext>
             <ImgProvider>
-              <Sidebar/>
+              <main className="h-screen flex">
+                <Sidebar/>
                 {children}
-              <ClearBtn/>
+              </main>
             </ImgProvider>
-          </PercentageProvider>
+          </SettingsContext>
         </LoaderProvider>
       </body>
     </html>

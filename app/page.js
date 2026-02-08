@@ -2,10 +2,10 @@ import DropArea from "@/components/dropArea";
 
 export default function Home() {
   return (
-    <main className="w-full relative">
+    <section className="w-full relative">
 
       <DropArea/>
       
-    </main>
+    </section>
   );
 }

@@ -1,9 +1,13 @@
 "use client"
 import React, { createContext, useContext, useEffect, useState } from 'react'
+import { useSettings } from './settingsProvider';
 
 const ImgContext = createContext()
 
 export default function ImgProvider({children}) {
+
+  const { setPercentage } = useSettings();
+  
   
   const [isDragging , setIsDragging] = useState(false)  
   const [droppedImgs , setDroppedImgs] = useState(null)
@@ -44,6 +48,7 @@ export default function ImgProvider({children}) {
           }
 
         })
+        setPercentage(100)
         setDroppedImgs(filesArray)
     })
     

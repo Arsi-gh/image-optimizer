@@ -23,3 +23,16 @@
     background-color: #525252;
     border-radius: 10rem;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.image-wrapper {
+ -webkit-mask:
+    linear-gradient(0deg, transparent, white 0%, white 1%, transparent);
+	mask:  linear-gradient(0deg, transparent, white 0%, white 1%, transparent),;
+}
